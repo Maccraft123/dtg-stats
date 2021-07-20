@@ -21,16 +21,16 @@ int main(void)
 			strcpy(out, "[FUL]+");
 			break;
 		case 76 ... 80:
-			strcpy(out, "[---]+");
+			strcpy(out, "[HIG]+");
 			break;
 		case 36 ... 75:
-			strcpy(out, "[-- ]+");
+			strcpy(out, "[MED]+");
 			break;
 		case 11 ... 35:
-			strcpy(out, "[-  ]+");
+			strcpy(out, "[LOW]+");
 			break;
 		case 0 ... 10:
-			strcpy(out, "[   ]+");
+			strcpy(out, "[EMP]+");
 			break;
 	}
 	printf("%s", out);
